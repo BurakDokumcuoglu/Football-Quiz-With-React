@@ -1,0 +1,58 @@
+.wrongAnswerModal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrongAnswerModal-topInfo{
+    color:white;
+    font-size:1.2em;
+    letter-spacing: 1px;
+}
+
+.wrongAnswerModal-icon{
+    margin-top: 2vh;
+}
+
+.wrongAnswerModal-okBtn{
+    margin-top: 5vh;
+    width: 8vw;
+    color: black;
+    border-radius: 1.5vh;
+    border:2px solid white;
+}
+
+@media only screen and (max-width: 768px){
+    .wrongAnswerModal-topInfo{
+        font-size:2.4em;
+    }
+
+    .wrongAnswerModal-icon{
+        margin-top: 5vh;
+    }
+
+    .wrongAnswerModal-okBtn{
+        margin-top: 7vh;
+        width: 14vw;
+        height: 4vh;
+       font-size: 2.7em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .wrongAnswerModal-topInfo{
+        font-size:2.7em;
+    }
+
+    .wrongAnswerModal-icon{
+        margin-top: 3vh;
+    }
+
+    .wrongAnswerModal-okBtn{
+        margin-top: 4vh;
+        width: 17vw;
+        height: 5vh;
+       font-size: 3em;
+    }
+}

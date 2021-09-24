@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.css";
+import Menu from "../src/components/Menu";
+import UserProfile from "./components/UserProfile";
+import Titles from "./components/Titles";
+import Games from "./components/Games";
+import Prize from "./components/Prize";
+import StartAndBuy from "./components/StartAndBuy";
+import HistoryAndRules from "./components/HistoryAndRules";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Game from "../src/pages/Game";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Menu className={styles.menu}></Menu>
+            <UserProfile className={styles.userp}></UserProfile>
+            <Titles className={styles.titles}></Titles>
+            <Prize className={styles.prize}></Prize>
+            <Games className={styles.games}></Games>
+            <StartAndBuy className={styles.startAndBuy}></StartAndBuy>
+            <HistoryAndRules
+              className={styles.historyAndRules}
+            ></HistoryAndRules>
+            <Footer className={styles.footer}></Footer>
+          </Route>
+          <Route path="/game">
+            <Game></Game>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

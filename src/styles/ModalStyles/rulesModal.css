@@ -1,0 +1,84 @@
+.rulesModal-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11vh; 
+    width: 100%;
+    background-image: url("../../images/arkaplan.png"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    font-size: 1.6em;
+}
+
+.rulesModal-content{
+    background-color: #75ADA6;
+    height: 56.8vh;
+    overflow: hidden;
+}
+
+.rulesModal-content-info{
+    width: 60vw;
+    height: 40vh;
+    margin:5vh 0 0 8vh;
+    background-color: #075c55;
+    border-radius: 2vh;
+    border:2px solid white;
+    color: white;
+    font-size: 1.1em;
+    padding: 2vh;
+    overflow: scroll;
+
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    
+}
+
+.rulesModal-content-info::-webkit-scrollbar{
+display: none;
+}
+
+.rulesModal-content-button{
+    display: flex;
+    justify-content: center;
+}
+
+.rulesModalbtn{
+    margin-top: 3vh;
+    width: 9vw;
+    height: 4vh;
+    border-radius: 1vh;
+    border: 2px solid white;
+    color:#075c55;
+}
+
+@media only screen and (max-width: 768px){
+    .rulesModal-top{
+        font-size: 6em;
+    }
+
+    .rulesModal-content-info{
+        width: 50vw;
+        font-size: 3em;
+    }
+
+    .rulesModalbtn{
+        width: 18vw;
+        height: 5vh;
+        font-size: 5em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .rulesModal-content-info{
+        width: 45vw;
+        font-size: 2.5em;
+    }
+
+    .rulesModalbtn{
+        width: 22vw;
+        height: 6vh;
+        font-size: 4em;
+    }
+}

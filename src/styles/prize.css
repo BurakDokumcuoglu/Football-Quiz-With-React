@@ -1,0 +1,37 @@
+.prize{
+margin:0 auto;
+margin-top:1em;
+ margin-right: 4.4vw; 
+/* overflow: hidden; */
+height: 18vh;
+}
+
+.img-prize{
+    width:28.7vw;
+    height: 27vh;
+    padding-left:1vw;
+    border-radius: 2vh;
+}
+
+@media only screen and (max-width: 768px){
+    .prize{
+         /* position:absolute ;
+        top:20vh;
+        left:50vw; */
+         /* display: none;  */
+        margin: 1.1vh;
+        /* margin-bottom: 1vh; */
+        /* margin-left: 50vw; */
+        height: 8vh;
+        width: 30vw;
+        display: inline-block;   /* yanyana koyma denemesi */
+    }
+
+    .img-prize{
+        /* margin-top: 0.5vh; */
+        width:35vw;
+        height: 9.5vh;
+        padding-left: 1vw;
+        border-radius: 2vh;
+    }
+}

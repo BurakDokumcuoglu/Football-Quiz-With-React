@@ -1,0 +1,192 @@
+.menu{
+    margin-top:1vh;
+    padding-left: 2vw;
+    width: 65vw;
+    min-width: 600px;
+    height: 8vh;
+}
+
+.menu-item{
+    display: inline-block;
+    margin: 1vh;
+    padding: 1vh;
+    background-color: #75ADA6;
+    border-radius: 1vh;
+    height: 5vh;
+    position: relative;
+    cursor: pointer;
+}
+
+.search{
+width:11vw;
+}
+
+.all{
+    width: 9vw;
+}
+
+.minbet{
+    width: 7.5vw;
+    margin-right: 1vw;
+}
+
+.maxbet{
+    width: 7.5vw;
+    margin-left: 1vw;
+}
+
+.text{
+    color:white;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    margin-left:2.2vw;
+    margin-top:1vw;
+}
+.tire{
+    margin: 0;
+    padding: 0;
+}
+.menu-item-text{
+    color:lightgray;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.arama-text{
+    display: inline-block;
+}
+
+.arama-text-short{
+    display: none;
+}
+
+.icon{
+    position: absolute;
+    right:0.2vw;
+}
+
+@media only screen and (max-width: 768px){
+    .menu{
+        width: 100vw;
+        min-width: 600px;
+        height: 5vh;
+        /* margin-top: 1vh;
+        margin-left: 1vh; */
+    }
+
+    .menu-item{
+        margin:0.5vh;
+        padding:0.8vh 0.8vh 0.8vh 0.2vh;
+        border-radius:1em;
+        height: 6em;
+    }
+
+    .search{
+        /* width: 20em; */
+        width: 12vw;
+        }
+        
+        .all{
+            width: 10vw;
+        }
+        
+        .minbet{
+            width: 9vw;
+            margin-right: 1em;
+        }
+        
+        .maxbet{
+            width: 9vw;
+            margin-left: 1em;
+        }
+
+        .text{
+            font-size: 3em;
+            margin-left:0.5em;
+        }
+
+        .menu-item-text{
+            font-size: 2.5em;
+        }
+
+        .arama-text{
+            display: none;
+        }
+
+        .arama-text-short{
+            display: inline-block;
+        }
+
+        .icon{
+            font-size: 2em;
+            right: 0;
+        }
+
+       
+       
+}
+
+@media only screen and (max-width: 600px){
+    .menu{
+        width: 100vw;
+        min-width: 320px;
+        height: 5vh;
+        /* margin-top: 1vh;
+        margin-left: 1vh; */
+    }
+    .menu-logo{
+        width: 10vw;
+        height: auto;
+    }
+    .menu-item{
+        margin:0.2vh;
+        padding:0.8vh 0.8vh 2.3vh 0.2vh;
+        border-radius:1em;
+        height: 3em;
+    }
+
+    .search{
+        /* width: 20em; */
+        width: 12vw;
+        }
+        
+        .all{
+            width: 10vw;
+        }
+        
+        .minbet{
+            width: 8vw;
+            /* margin-right: 1em; */
+        }
+        
+        .maxbet{
+            width: 9.2vw;
+            /* margin-left: 1em; */
+        }
+
+        .text{
+            font-size: 1.5em;
+            /* margin-left:0.5em; */
+        }
+
+        .menu-item-text{
+            font-size: 2em;
+        }
+
+        .arama-text{
+            display: none;
+        }
+
+        .arama-text-short{
+            display: inline-block;
+        }
+
+        .icon{
+            display: none;
+            font-size: 1em;
+            right: 0;
+        }
+
+       
+       
+}

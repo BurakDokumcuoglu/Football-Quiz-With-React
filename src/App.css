@@ -1,38 +1,135 @@
+@font-face {
+  font-family: 'Geomanist';
+  src: local('Geomanist'), url("../src/font/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Webfont/geomanist-regular-webfont.ttf") format('truetype');
+}
+.App, body, html{
+
+
+  font-family: Poppins,sans-serif;
+  
+  overflow: hidden;  /* sayfa resize durumunda scroll oluşmasını engellemek için */
+}
 .App {
-  text-align: center;
+  background-image: url("./images/arkaplan.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  /* overflow:hidden; */
+
+  /* width: 100%;
+  max-width: 2000px;responsive */
+
+  display:grid;
+  height:100vh;
+  width: 100vw;
+  grid-template-columns: 4fr 0.7fr ;
+  /* grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); */
+  grid-template-rows: 0.7fr 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "a b"
+  "c d"
+  "e d"
+  "e d"
+  "e d"
+  "e f"
+  "e f"
+  "e g"
+  "e g"
+  "z z"
+  ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu{
+  grid-area: a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.userp{
+  grid-area: b;
+}
+
+.titles{
+  grid-area: c;
+}
+
+.games{
+  grid-area: e;
+}
+
+.prize{
+  grid-area: d;
+}
+
+.startAndBuy{
+  grid-area: f;
+}
+
+.historyAndRules{
+  grid-area: g;
+}
+
+.footer{
+  grid-area: z;
+}
+
+@media only screen and (max-width: 768px) {
+  .App{
+    display: grid;
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+    /* align-content: center; */
+    grid-template-columns: 1fr;   
+    grid-template-rows: 2fr 1fr 3fr 1fr 15fr 1.5fr 1fr;
+    grid-template-areas: 
+    "a"
+    "b"
+    "f"
+    "c"
+    "e"
+    "g"
+    "z" ;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  html,body, .App{
+    font-size: 5.5px;
   }
-  to {
-    transform: rotate(360deg);
+  body{
+    min-height: 100vh;
   }
+
+  .menu{
+    grid-area: a;
+  }
+  
+  .userp{
+    grid-area: b;
+  }
+
+  .prize{
+    grid-area: f;
+    
+  }
+
+  .startAndBuy{
+    grid-area: d;
+  }
+  
+  .titles{
+    grid-area: c;
+  }
+  
+  .games{
+    grid-area: e;
+   
+  }
+  
+  .historyAndRules{
+    grid-area: g;
+  }
+  
+  .footer{
+    grid-area: z;
+  }
+
+
 }

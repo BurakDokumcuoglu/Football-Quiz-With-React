@@ -1,0 +1,96 @@
+.maxBetModal-top{
+    width: 16vw;
+    height: 3vh;
+    border-bottom: gray solid 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.maxBetModal-top-text{
+    color: white;
+    font-size: 1.2em;
+}
+
+.form-control{
+    background-color: #4cb56f;
+    opacity: 0.5;
+}
+
+.maxBetModal-content{
+    margin-top: 0.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maxBetModal-input{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 1px white solid;
+}
+
+.maxBetModal-input:focus{
+    border: 1px blue solid;
+}
+
+.maxBetModal-okbtn{
+    width: 10vw;
+    height: 4vh;
+    border: 1px white solid;
+    font-size: 1.2em;
+    color: #075c55 !important;
+}
+
+@media only screen and (max-width: 768px){
+
+    .maxBetModal-top{
+        border-bottom: none;
+        width: 14vw;
+    }
+
+    .maxBetModal-top-text{
+        color: white;
+        font-size: 3em;
+    }
+
+    .maxBetModal-okbtn{
+        width: 14vw;
+        border-radius: 1vh;
+        font-size: 3em;
+    }
+    
+    .form-control{
+        margin-top: 5vh;
+        width: 14vw;
+        height: 3vh;
+        background-color: #4cb56f;
+        opacity: 0.5;
+        border-radius: 1vh;
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .maxBetModal-top{
+        border-bottom: none;
+        width: 12vw;
+    }
+
+    .maxBetModal-top-text{
+        color: white;
+        font-size: 2em;
+        margin-right: 6vw;
+    }
+
+    .maxBetModal-okbtn{
+        width: 15vw;
+        border-radius: 1vh;
+        font-size: 2.5em;
+    }
+    
+    .maxBetModal-input{
+        margin-top: 4vh !important;
+    }
+}

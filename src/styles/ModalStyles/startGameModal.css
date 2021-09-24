@@ -1,0 +1,124 @@
+.startGameModal-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-image: url("../../images/arkaplan.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  font-size: 1.6em;
+}
+
+.startGameModal-content {
+  background-color: #75ada6;
+  height: 54.83vh;
+}
+
+.startGameModal-content-gameTypeButtons {
+  padding-top: 1vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.startGameModal-content-gameTypeButton {
+  width: 12vw;
+  height: 5vh;
+  border-radius: 1vh;
+  border: 2px solid white;
+  background-color: #075c55;
+}
+
+.startGameModal-content-gameTypeButton-active{
+  border-radius: 1vh !important;
+  border: 2px solid white !important;
+  background-color:#ffbb33 !important;
+  color: #075c55 !important;
+}
+
+.startGameModal-content-gameTypeOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.startGameModal-content-gameTypeOption {
+  width: 26vw;
+  height: 6vh;
+  background-color: #075c55;
+  border: 2px solid white;
+  border-radius: 1vh;
+  margin-top: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.startGameModal-content-gameTypeOption:hover {
+  border: 2px solid black;
+  font-size: 1.3em;
+}
+
+.startGameModal-icon {
+  position: absolute;
+  right: 3vw;
+}
+
+.startGameModal-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.startGameModal-button {
+  width: 26vw;
+  height: 6vh;
+  border: 2px solid white;
+  border-radius: 1vh;
+  color: #075c55;
+  background-color: #ffbb33 !important;
+}
+
+@media only screen and (max-width: 768px){
+  .startGameModal-top{
+    font-size: 5em;
+  }
+
+  .startGameModal-content-gameTypeButton{
+    font-size: 3em;
+  }
+
+  .startGameModal-content-gameTypeOption{
+    font-size: 3em;
+  }
+
+  .startGameModal-button{
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .startGameModal-top{
+    height: 9.8vh;
+    font-size: 4em;
+  }
+
+  .startGameModal-content-gameTypeButton{
+    width: 14vw;
+    font-size: 1.8em;
+  }
+
+  .startGameModal-content-gameTypeOption{
+    font-size: 2em;
+  }
+
+  .startGameModal-button{
+    font-size: 2.5em;
+  }
+}

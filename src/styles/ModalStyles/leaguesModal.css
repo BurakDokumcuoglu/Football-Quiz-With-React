@@ -1,0 +1,109 @@
+.leaguesModal-top{
+    width: 16vw;
+    height: 3vh;
+    border-bottom: gray solid 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.leagues-icon{
+    position: absolute;
+    right: 2vw;
+}
+
+.leaguesModal-top-text{
+    color: white;
+    font-size: 1.2em;
+}
+
+.leaguesModal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaguesModal-content-item{
+    color: white;
+    margin-top: 1.4vh;
+    font-size: 1.2em;
+}
+
+.leaguesModal-content-item:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    .leaguesModal-top{
+        width: 14vw;
+        height: 3vh;
+        border-bottom: gray solid 1px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .leagues-icon{
+       display: none;
+    }
+    
+    .leaguesModal-top-text{
+        color: white;
+        font-size: 4em;
+    }
+
+    .leaguesModal-content-item{
+        color: white;
+        margin-top: 1.4vh;
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .leaguesModal-container{
+      
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .leaguesModal-container::-webkit-scrollbar{
+            display: none;
+    }
+
+    .leaguesModal-top{
+        width: 12vw;
+        height: 4vh;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        padding-right: 3vh;
+        margin-top:0;
+    }
+    
+    .leagues-icon{
+       display: none;
+    }
+    
+    .leaguesModal-top-text{
+        color: lightgray;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .leaguesModal-content{
+        
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .leaguesModal-content::-webkit-scrollbar{
+        display: none;
+    }
+
+    .leaguesModal-content-item{
+        color: white;
+        margin-top: 2.3vh;
+        font-size: 2em;
+    }
+
+}

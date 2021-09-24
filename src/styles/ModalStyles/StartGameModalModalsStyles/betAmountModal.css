@@ -1,0 +1,96 @@
+.betAmountModal-top{
+    width: 16vw;
+    height: 3vh;
+    border-bottom: gray solid 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.betAmountModal-top-text{
+    color: white;
+    font-size: 1.2em;
+}
+
+.form-control{
+    background-color: #4cb56f;
+    opacity: 0.5;
+}
+
+.betAmountModal-content{
+    margin-top: 0.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.betAmountModal-input{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 1px white solid;
+}
+
+.betAmountModal-input:focus{
+    border: 1px blue solid;
+}
+
+.betAmountModal-okbtn{
+    width: 10vw;
+    height: 4vh;
+    border: 1px white solid;
+    font-size: 1.2em;
+    color: #075c55 !important;
+}
+
+@media only screen and (max-width: 768px){
+    .betAmountModal-top{
+        width: 15vw;
+    }
+
+    .betAmountModal-top-text{
+        font-size: 3em;
+    }
+
+    .betAmountModal-okbtn{
+        width: 15vw;
+        height: 4vh;
+        border-radius: 1vh;
+        font-size: 3em;
+    }
+
+    .betAmountModal-input{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        border: 1px white solid;
+        width: 15vw;
+        height: 4vh;
+        border-radius: 1vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .betAmountModal-top{
+        width: 12vw;
+        border-bottom: none;
+    }
+
+    .betAmountModal-top-text{
+        font-size: 2em;
+    }
+
+    .betAmountModal-okbtn{
+        width: 15vw;
+        height: 4vh;
+        border-radius: 1vh;
+        font-size: 2.5em;
+    }
+
+    .betAmountModal-input{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        border: 1px white solid;
+        width: 15vw;
+        height: 4vh;
+        border-radius: 1vh;
+    }
+}

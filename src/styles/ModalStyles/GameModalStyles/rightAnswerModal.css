@@ -1,0 +1,73 @@
+.rightAnswerModal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightAnswerModal-topInfo{
+    color:white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+}
+
+.rightAnswerModal-trueIcon{
+    margin-top: 2vh;
+}
+
+.rightAnswerModal-midInfo{
+    color: white;
+    margin-top: 2vh;
+}
+
+.rightAnswerModal-remainingPlayers{
+    color:white;
+    font-size: 3em;
+    margin-top: 3vh;
+}
+
+.rightAnswerModal-okBtn{
+    margin-top: 2vh;
+    width: 8vw;
+    color: black;
+    border-radius: 1.5vh;
+    border:2px solid white;
+}
+
+@media only screen and (max-width: 768px){
+    .rightAnswerModal-topInfo{
+      
+        font-size: 2.6em;
+    }
+
+    .rightAnswerModal-midInfo{
+       font-size: 2.3em;
+        margin-top: 5vh;
+    }
+
+    .rightAnswerModal-remainingPlayers{
+        font-size: 6em;
+        margin-top: 3vh;
+    }
+    
+    .rightAnswerModal-okBtn{
+        margin-top: 5vh;
+        width: 12vw;
+        height: 4vh;
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .rightAnswerModal-remainingPlayers{
+        margin-top: 1vh;
+    }
+
+    .rightAnswerModal-okBtn{
+        margin-top: 1vh;
+        width: 16vw;
+        height: 5vh;
+        font-size: 2.5em;
+    }
+}
