@@ -38,7 +38,7 @@ const MaxBetModal = ({ cancel, isMaxBetModalVisible, setMaxBetValue }) => {
     >
       <div className="maxBetModal-container">
         <div className="maxBetModal-top">
-          <span className="maxBetModal-top-text">MAKSİMUM BAHİS MİKTARI</span>
+          <span className="maxBetModal-top-text">MAKSİMUMM BAHİS MİKTARI</span>
         </div>
 
         <div className="maxBetModal-content">
